@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function download(s) {
+  var pic;
+  if (s == 0) {
+    pic = "1.gif"
+  } else {
+    pic = "2.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="nature.jpg" width="200" height="180">
+
+<p>
+<button type="button" onclick="download(1)">start</button>
+<button type="button" onclick="download(0)">stop</button>
+</p>
+
+</body>
+</html>
