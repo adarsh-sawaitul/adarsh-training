@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+            .dropdown{
+                position: relative;
+                display:inline-block;
+            }
+            .dropbtn{
+                margin-left:100px;
+                background-color: green;
+                color: white;
+                padding: 20px;
+                font-size: 10px;
+                border:indigo;
+                cursor: pointer;
+            }
+            .drop-content ul li a{
+                
+                color:black;
+                padding: 12px 16px;
+                margin:0;
+                text-decoration: none;
+                display:block;
+                border-radius: 5px;
+            }
+            .drop-content ul li a:hover{
+                background-color: red;
+            }
+            .drop-content ul li {
+                list-style-type: none;
+                position: relative;
+                display:none;
+                
+            }
+            .dropdown:hover .drop-content ul li{
+                display: block;
+                text-align: center;
+                position: relative;
+            }
+            .dropbtn:hover{
+                background-color: lawngreen;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <h1>here is the dropdown button or buttnn</h1>
+        <p>move cousor over the button. beloww</p>
+        <div class="dropdown">
+            <button class="dropbtn">DROPDOWN,</button>
+            <div class="drop-content">
+                <ul>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                    <li><a href="#">Link3</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

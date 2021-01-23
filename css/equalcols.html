@@ -1,0 +1,88 @@
+<hmtl>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin:0;
+            }
+            .header{
+                background-color: lightgray;
+                padding: 20px;
+                text-align: center;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: darkslategrey;
+            }
+            .topnav a{
+                float:left;
+                display: block;
+                color:white;
+                text-align: center;
+                padding: 15px 16px;
+                text-decoration: none;
+            }
+            .topnav a:hover{
+                background-color: tomato;
+                color: whitesmoke;
+            }
+            .column{   /* creates three equal colums that will be next to each other*/
+                float: left;
+                width: 33.33%;
+                padding:15px;
+                border: 5px solid pink;
+            }
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* to making responsive layout*/
+            @media screen and (max-width:800px){
+                .column {
+                    width: 100%;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 class="header">Header</h1>
+            <p> Resize the browser window to see the responsive effect.</p>
+        </div>
+        <div class="topnav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+
+        <div class="row">
+            <div class="column">
+            <h2>Column1</h2>
+            <p>paragraporem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus 
+                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula,
+                 risus eget aliquam placerat, purus leo tincidunt eros, eget 
+                 luctus quam orci in velit. h</p>
+        </div>
+        <div class="row">
+            <div class="column">
+            <h2>column2</h2>
+            <p>paragraporem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus 
+                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula,
+                 risus eget aliquam placerat, purus leo tincidunt eros, eget 
+                 luctus quam orci in velit. h</p>
+        </div>
+        <div class="row">
+            <div class="column">
+            <h2>column3</h2>
+            <p>paragraporem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus 
+                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula,
+                 risus eget aliquam placerat, purus leo tincidunt eros, eget 
+                 luctus quam orci in velit. h</p>
+        </div>
+    </body>
+</hmtl>
